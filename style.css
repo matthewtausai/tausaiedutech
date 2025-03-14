@@ -8,7 +8,7 @@
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image:linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/mateo.jpg);
+    background-image:linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/road.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -213,6 +213,11 @@ p{
     transition: 0.5s;
 }
 
+.video{
+    border-radius: 10px;
+    width: 120%;
+}
+
 h3{
     text-align: center;
     font-weight: 600;
@@ -242,6 +247,11 @@ h3{
         flex-direction: column;
     }
 
+    .video{
+        border-radius: 10px;
+        width: 100%;
+    }
+
 }
 
 /*coding the campus section*/
@@ -255,7 +265,8 @@ h3{
 }
 
 .campus-column{
-    flex-basis: 32%;
+    background: #fff3f3;
+    flex-basis: 31%;
     border-radius: 10px;
     margin-bottom: 30px;
     position: relative;
@@ -302,12 +313,13 @@ h3{
 .facilities{
     text-align: center;
     margin: auto;
-    padding-top: 100px;
+    padding-top: 80px;
     padding-bottom: 50px;
-    width: 80%;
+    width: 50%;
 }
 
 .facility-column{
+    background: #fff3f3;
     flex-basis: 32px;
     text-align: center;
     border-radius: 10px;
@@ -438,3 +450,10 @@ h3{
     cursor: pointer;
     padding: 18px 0 ;
 }
+
+p img{
+    height: 15px;
+    padding-left: 10px;
+
+}
+

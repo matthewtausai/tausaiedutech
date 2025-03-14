@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*.......coding the navigation section*/
+.header{
+    min-height: 130vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/almaabout.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    transition: opacity 1s ease-in-out, background-image 1s ease-in-out;
+}
+
+nav{
+    background: linear-gradient(rgba(27, 27, 27, 0.7)100%, rgba(159, 159, 163, 0.7));
+    position:fixed;
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    padding: 2% 6%;
+    justify-content: space-between;
+    z-index: 999;
+    box-shadow: 2PX 2PX 10px 10px rgba(0, 0, 0, 0.19);
+}
+/*this is the image in the nav bar*/
+nav img{
+    width: 50px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: center;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 2%;
+}
+
+.nav-links ul li a{
+    text-decoration: none;
+    text-align: center;
+    color:#fff;
+    font-size: 13px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li a:hover{
+    font-weight: bolder;
+
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+/*...now i a coding the body.....textbox*/
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left:50% ;
+    bottom: 0%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h2{
+    margin-top: 25%;
+    font-size: 62px;
+    color: #777;
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 15px;
+  
+    
+}
+
+.visit-btn{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 14px 12px 12px 34px;
+    border: 1px solid;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    background: transparent;
+}
+
+.visit-btn:hover{
+    border: 1px solid #757373;
+    background: #979292;
+    transition: 1s;
+}
+
+
+/*hiding the icons from font awesome......*/
+
+nav .fa{
+    display: none;
+
+}
+
+/*responsive part for small screens like smart phones and tablets......*/
+
+@media(max-width: 700px){
+    .text-box h2{
+        font-size: 30px;
+    }
+
+    nav{
+        position:relative;
+        height: 5vh;
+        display: flex;
+        align-items: center;
+        padding: 2% 6%;
+        justify-content: space-between;
+        z-index: 999;
+        box-shadow: 2PX 2PX 10px 10px rgba(0, 0, 0, 0.19);
+    }
+
+    .nav-links{
+        position: absolute;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        background: #e09191;
+        transition: 1s;
+    }
+    
+    .nav-links ul li{
+        display: block;
+    }
+
+    /*displaying the icons from font awesome in smaller screens......*/
+
+    nav .fa{
+        display: block;
+        color: #fff;
+        cursor: pointer;
+        margin: 10%;
+        font-size: 22px;
+    }
+
+    nav img{
+        width: 20px;
+    }
+
+    .nav-links ul{
+        padding: 35px;
+
+    }
+    .course h2{
+        font-size: 20px;
+    } 
+
+}
+
+/*-----coding the footer section--------*/
+
+.footer{
+    text-align: center;
+    width: 100%;
+    padding: 30px 0;
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.footer p{
+    font-size: 13px;
+    margin-bottom: 25px;
+    margin-top: 20px;
+} 
+
+.icons .fa{
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0 ;
+}
+
+@media(max-width:700PX){
+    .footer p{
+        font-size: 13px;
+        margin-bottom: 25px;
+        margin-top: 20px;
+    }
+}
+
+
+/*-now coding the contacts us--*/
+
+#experts {
+    text-align: center;
+    padding: 8vw;
+    background: rgba(21, 21, 100);
+}
+
+#experts .expert-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;  
+}
+
+#experts .expert-box .profiles {
+    background: #F9F9FF;
+    padding: 20px; /* Adjusted padding for better fit */
+    border-radius: 50%; /* Make the profiles box circular */
+    width: 200px; /* Fixed width */
+    height: 200px; /* Fixed height */
+    display: flex; /* Flexbox for content alignment */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    overflow: hidden; /* Ensure no content overflows */
+    margin: 0 auto; /* Center the expert box */
+}
+
+#experts .profiles img {
+    height: 70%; /* Adjust size of the profile image */
+    width: 50%; /* Ensure the image is responsive */
+    border-radius: 50%; /* Make the image circular */
+}
+
+#experts .pro-links {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center; /* Center the links */
+}
+
+#experts .pro-links img {
+    height: 20px; /* Icon size */
+    width: 20px; /* Icon size */
+    margin: 0 5px; /* Space between icons */
+    transition: background 0.3s ease-in;
+}
+
+#experts .pro-links :hover img{
+    background: rgba(21, 25, 100);
+    cursor: pointer;
+}
+
+#experts h1 {
+    color: #F9F9FF;
+}
+
+#experts p {
+    color: #b8b8dd;
+    margin-top: 15px;
+    background: rgba(21, 21, 100);
+}
+
+p img{
+    height: 15px;
+    padding-left: 10px;
+
+}

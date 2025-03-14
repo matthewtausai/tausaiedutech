@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlmaInstitute-mutare</title>
+
+    <link rel="stylesheet" href="contact.css">
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('#section');
+    
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    } else {
+                        entry.target.classList.remove('visible'); // Optional: remove class when not in view
+                    }
+                });
+            }, {
+                threshold: 0.2 // Trigger the effect when 20% of the section is visible
+            });
+    
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+
+
+</head>
+<body>
+
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/AI LOGO.png" alt="Alma Institute-Mutare"></a>
+            <div class="nav-links" id = "navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="#">COURSES</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">GALLERY</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        
+        <div class="text-box">
+            <h2>ALMA INSTITUTE IS LOCATED AT <br/>THE CITY OF MUTARE, ZIMBABWE</h2>
+        <p>We are committed to providing our learners with a safe and comfortable Zlearning environment. Our School is designed to accommodate students of all ages and abilities, <br/>ensuring that everyone has the opportunity to learn and grow. We are located at the industry side of the city of Mutare, Zimbabwe, <br/>Zwhich offers a beautiful and picturesque environment <br/>for students to study and grow.</p>
+
+        </div>
+
+    </section>
+
+    <section id = "map">
+        <h2 style="text-align: center">
+            ALMA INSTITUTE </h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d30177.927046809407!2d32.64539539999999!3d-19.0091044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2szw!4v1740739006087!5m2!1sen!2szw" width="100%" height="560" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </section>
+
+    <section id="experts">
+        <h1>ALMA INSTITUTE ADMIN</h1>
+            <p>Feel Free to Get In Touch With Us Today and Be Part of Our Story</p>
+        <div class="expert-box">
+            <div class="profiles">
+                <img src="Images/AI LOGO.png" alt="">
+                <h6>Admin1</h6>
+                 <p>+263777462704</p>
+                <div class="pro-links">
+
+                    <a href="https://wa.me/+263 77 807 1375" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                      
+                    <a href="mailto:almainstitute00@gmail.com">
+                       <i class="fa-solid fa-envelope"></i>
+                    </a>
+        
+                    <a href="https://www.youtube.com/@matthewtausai" target="_blank">
+                      <i class="fa-brands fa-youtube"></i>
+                    </a>
+               
+                </div>
+            </div>
+
+            <div class="profiles">
+            
+                <img src="Images/AI LOGO.png" alt="">
+                <h6>Admin2</h6>
+                <p>+263784721761</p>
+                 <p></p>
+                <div class="pro-links" class="section">
+                    
+                    <a href="https://wa.me/+263 77 807 1375" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                      
+                    <a href="mailto:almainstitute00@gmail.com">
+                       <i class="fa-solid fa-envelope"></i>
+                    </a>
+        
+                    <a href="https://www.youtube.com/@matthewtausai" target="_blank">
+                      <i class="fa-brands fa-youtube"></i>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="profiles"> 
+            
+                <img src="Images/AI LOGO.png" alt="">
+                <h6>Admin3</h6>
+                 <p>+263778071375</p>
+                <div class="pro-links">
+
+                    <a href="https://wa.me/+263 77 807 1375" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                      
+                    <a href="mailto:almainstitute00@gmail.com">
+                       <i class="fa-solid fa-envelope"></i>
+                    </a>
+        
+                    <a href="https://www.youtube.com/@matthewtausai" target="_blank">
+                      <i class="fa-brands fa-youtube"></i>
+                    </a>
+              
+                </div>
+            </div>
+
+            <div class="profiles">
+            
+                <img src="Images/AI LOGO.png" alt="">
+                <h6>Admin4</h6>
+                 <p>+263774814458</p>
+                <div class="pro-links">
+
+                    <a href="https://wa.me/+263 77 807 1375" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                      
+                    <a href="mailto:almainstitute00@gmail.com">
+                       <i class="fa-solid fa-envelope"></i>
+                    </a>
+        
+                    <a href="https://www.youtube.com/@matthewtausai" target="_blank">
+                      <i class="fa-brands fa-youtube"></i>
+                    </a>
+
+
+                </div>
+            </div>
+            
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="footer" id="section">
+        <h4>About Us</h4>
+        <p>Be Part Of Us Today And Your Career Opportunities Will Not Be The Same</p>
+
+        <div class="icons">
+            <a href="https://www.facebook.com/ALMA INSTITUTE" target="_blank">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+
+            <a href="https://wa.me/+263 77 807 1375" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+              
+            <a href="mailto:almainstitute00@gmail.com">
+               <i class="fa-solid fa-envelope"></i>
+            </a>
+
+            <a href="https://www.youtube.com/@matthewtausai" target="_blank">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+
+
+            <i class="fa-brands fa-instagram"></i>
+            <p>Made By Alma Institute<img src="images/AI LOGO.png" class="image"></p>
+        </div>
+     </section>
+
+     <!--javascript code to make the nav icons respond when clicked-->
+     <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+    
+</body>
+</html>

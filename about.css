@@ -8,7 +8,7 @@
 .header{
     min-height: 80vh;
     width: 100%;
-    background-image:linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/schoollib.PNG);
+    background-image:linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/price1.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -16,7 +16,7 @@
 }
 
 nav{
-    background: linear-gradient(rgba(27, 27, 27, 0.7)100%, rgba(159, 159, 163, 0.7));
+    background: linear-gradient(rgba(27, 27, 27, 0.7)100%, rgba(197, 197, 211, 0.7));
     position:fixed;
     width: 100%;
     height: 5vh;
@@ -130,6 +130,10 @@ nav .fa{
         box-shadow: 2PX 2PX 10px 10px rgba(0, 0, 0, 0.19);
     }
 
+    .nav-links ul li:hover::after{
+        width: 0%;
+    }
+
     .nav-links{
         position: absolute;
         height: 100vh;
@@ -220,10 +224,13 @@ p{
 
 .video{
     border-radius: 10px;
+    width: 100%;
 }
 
-.course-column .img{
-    border-radius: 15px;
+
+.course-column img{
+    border-radius: 40px;
+    width: 70%;
 }
 
 .course-column{
@@ -256,4 +263,80 @@ h3{
         width: 70%;
         border-radius: 10px;
     }
+
+    .course-column{
+        width: 70%;
+        margin-left: 14%;
+    }
+
+    .course-column img{
+        width: 50%;
+    }
+}
+
+/*features coding --*/
+.services{
+    width: 80%;
+    text-align: center;
+    margin:auto;
+    padding-top: 100px;
+    
+}
+
+.services h1{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.services p{
+    font-size: 14px;
+    color: #777;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 300;
+    }
+
+.services .fea-base{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+    height: 70%;
+    width: 100%;
+    
+
+}
+.services .fea-box {
+    text-align: start;
+    background-image:linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7));
+}
+
+.services .fea-box img{
+    
+    width: 80%;
+    height: 50%;
+    font-size: 2.3rem;
+    color: rgb(4, 0,5, 0.5);
+    padding-top: 10px;
+    padding-left: 35px;
+    padding-right: 2px;
+
+}
+.services .fea-box h3{
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #F9F9FF;
+    padding: 13px 0 7px 0;
+}
+.services .fea-box p{
+    font-weight: 100;
+    font-size: 1rem;
+    color: #F9F9FF;
+        
+}
+
+p img{
+    height: 15px;
+    padding-left: 10px;
+
 }
