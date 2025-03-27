@@ -6,7 +6,11 @@
     <title>AlmaInstitute-mutare</title>
     <link rel="stylesheet" href="style.css">
     
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+
 
 
 
@@ -42,19 +46,19 @@
                 <ul>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="#">COURSES</a></li>
-                    <li><a href="#">BLOG</a></li>
-                    <li><a href="#">GALLERY</a></li>
+                    <li><a href="curriculum.html">CURRICULUM</a></li>
+                    <li><a href="aigallery.html">ALMA GALLERY</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
+                    
                 </ul>
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
         
         <div class="text-box">
-            <h1>Enhance Your Future With ALMA INSTITUTE</h1>
+            <h1 class="animate_animated animate_infinite animate_heartBeat">Enhance Your Future With ALMA INSTITUTE</h1>
            <p>To dedicate ourselves to safeguarding the welfare of learners that nurtures knowledge acquisition and <br/> wisdom so that they meet challenges positively.</p>
-           <a href="#" class="visit-btn">Visit us to know More</a>
+           <a href="about.html" class="visit-btn">Visit us to know More</a>
         </div>
 
     </section>
@@ -121,6 +125,16 @@
 
         <div class="row">
             <div class="facility-column">
+
+                <video autoplay loop muted plays-inline class="video">
+                    <source src="images/Players.mp4" type="video/mp4">
+                </video>
+
+                <h2>PLAYING GROUNDS</h2>
+                <p>We have an excellent academic hall with state-of-the-art technology for students to study</p>
+            </div>
+            
+            <div class="facility-column">
                 <img src="images/Clab.jpg">
                 <h2>COMPUTER ROOM</h2>
                 <p>We have an excellent academic hall with state-of-the-art technology for students to study</p>
@@ -132,15 +146,7 @@
                 <p>We have an excellent academic hall with state-of-the-art technology for students to study</p>
             </div>
 
-            <div class="facility-column">
-
-                <video autoplay loop muted plays-inline class="video">
-                    <source src="images/Players.mp4" type="video/mp4">
-                </video>
-
-                <h2>PLAYING GROUNDS</h2>
-                <p>We have an excellent academic hall with state-of-the-art technology for students to study</p>
-            </div>
+            
         </div>
     </section>
 
@@ -178,9 +184,21 @@
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star-half-o"></i>
                 </div>
-                
             </div>
         </div>
+
+        <div class="comment-section">
+            <h2>Leave Us a Comment</h2>
+            <form id="comment-form">
+                <input type="text" id = "name" placeholder="Name Here">
+                <textarea id = "comment" placeholder="Comment"></textarea>
+                <button id = "submit-btn">SUBMIT</button>
+            </form>
+            <div id = "comments-container"></div>
+        </div>
+    
+        <script src = "javascript.js"></script>
+
     </section>
 
      <!--call to action-->
@@ -188,7 +206,8 @@
         <h1>FORM 1 - 6 2025 REGISTRATION IS NOW OPEN<br/>What are you waiting for?. Hurry Up and Secure place for Your Child!!!</h1>
         <a href="" class="visit-btn">Contact Us Today</a> 
      </section>
-
+     
+     <!--footer-->
      <section class="footer" id="section">
         <h4>About Us</h4>
         <p>Be Part Of Us Today And Your Career Opportunities Will Not Be The Same</p>
@@ -213,8 +232,13 @@
 
 
             <i class="fa-brands fa-instagram"></i>
+             
 
-            <p>Made By Alma Institute<img src="images/AI LOGO.png" class="image"></p>
+           
+              
+            </a>
+            <p>  <a href="https://wa.me/+263 77 466 1932" target="_blank">  Made By Alma Institute<img src="images/AI LOGO.png" class="image">     </a>
+            </p>
           </div>
      </section>
 
