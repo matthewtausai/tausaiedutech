@@ -1,28 +1,49 @@
-const backgroundslider = document.querySelector('.text-box');
-const images = [
+const commentForm = document.getElementById('comment-form');
+const nameInput = document.getElementById('name');
+const commentInput = document.getElementById('comment');
+const submitBtn = document.getElementById('submit-btn');
+const commentContainer = document.getElementById('comments-container');
+
+let comments= [];
+submitBtn.addEventListener('click',(e) => {
+    e.preventDefault();
+    const nameValue=nameInput.value.trim();
+    const commentValue=commentInput.value.trim();
     
-    'images/matthew.jpg',
-    'images/redcap.jpg',
-    
-];
+    if (nameValue==='' || commentValue==='') {
+        alert('Please enter your name and comment');
+        return;
+    }else{
 
-let currentImageIndex = 0;
+    const comment ={
+        name:nameValue,
+        comment:commentValue,
+        timestamp:new Date().toLocaleString()
+    };
 
-backgroundslider.style.backgroundImage = `url(${images[currentImageIndex]})`;
+    comments.push(comment);
+    displayComments();
+    nameInput.value='';
+    commentInput.value='';
+}
 
+});
 
+function displayComments() {
+    const commentsHtml = comments.slice(-1).map((comment, index) => {
+        return `
+        <div class="comment">
+        <p class="comment-name">${comment.name}</p>
+        <p>${comment.comment}</p>
+        <p class="comment-timestamp">${comment.timestamp}</p>
+        </div>
+        `;
 
-setInterval(() => {
+    }).join('');
+    commentContainer.innerHTML = commentsHtml;
 
-    currentImageIndex = (currentImageIndex + 1) % images.length;
-    backgroundslider.classList.add('slide-out');
+    setInterval(() => {
 
-    setTimeout(() => {
-
-    backgroundslider.style.backgroundImage = `url(${images[currentImageIndex]})`;
-
-    backgroundslider.classList.remove('slide-out');
-
-    },1000);
-
-},2000);
+        displayComments();
+    }, 1000);
+}

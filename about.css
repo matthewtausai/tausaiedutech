@@ -195,6 +195,27 @@ nav .fa{
     padding: 18px 0 ;
 }
 
+p img{
+    height: 15px;
+    padding-left: 10px;
+
+}
+
+p a{
+    text-decoration: none;
+    transition: 1.5s ease-in-out;
+}
+
+p a:hover{
+    text-shadow: #f44336;
+    font-size: larger;
+    color: brown;
+}
+
+.icons a{
+    text-decoration: none;
+}
+
 /*Coding the course*/
 .course{
     width: 100%;
@@ -274,7 +295,7 @@ h3{
     }
 }
 
-/*features coding --*/
+/*services we offer coding --*/
 .services{
     width: 80%;
     text-align: center;
@@ -335,8 +356,4 @@ h3{
         
 }
 
-p img{
-    height: 15px;
-    padding-left: 10px;
 
-}
